@@ -26,8 +26,7 @@ DROP TABLE IF EXISTS `defender`.`player_type` ;
 CREATE TABLE IF NOT EXISTS `defender`.`player_type` (
   `id_player_type` INT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '',
   `player_type_name` VARCHAR(45) NOT NULL COMMENT '',
-  `player_type_picture` VARCHAR(45) NULL COMMENT '',
-  PRIMARY KEY (`id_player_type`)  COMMENT '')
+  PRIMARY KEY (`id_player_type`))
 ENGINE = InnoDB;
 
 
@@ -42,8 +41,7 @@ CREATE TABLE IF NOT EXISTS `defender`.`player` (
   `player_picture` VARCHAR(45) NULL COMMENT '',
   `player_exp` BIGINT(20) NOT NULL DEFAULT 0 COMMENT '',
   `id_player_type` INT UNSIGNED NOT NULL COMMENT '',
-  PRIMARY KEY (`id_player`)  COMMENT '',
-  INDEX `fk_player_player_type1_idx` (`id_player_type` ASC)  COMMENT '',
+  PRIMARY KEY (`id_player`)  COMMENT ''
   CONSTRAINT `fk_player_player_type1`
     FOREIGN KEY (`id_player_type`)
     REFERENCES `defender`.`player_type` (`id_player_type`)
