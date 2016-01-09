@@ -3,17 +3,6 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema defender
--- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `defender` ;
-
--- -----------------------------------------------------
--- Schema defender
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `defender` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `defender` ;
-
--- -----------------------------------------------------
 -- Table `defender`.`player_type`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `defender`.`player_type` ;
